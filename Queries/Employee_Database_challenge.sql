@@ -55,3 +55,41 @@ WHERE (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
 
 select * from mentorship_eligibilty;
+
+-- create list to broaden potential mentors
+SELECT DISTINCT ON (e.emp_no) e.emp_no, 
+e.first_name, 
+e.last_name, 
+e.birth_date,
+de.from_date,
+de.to_date,
+ti.title
+INTO expanded_mentorship_eligibilty
+FROM employees AS e
+INNER JOIN dept_emp AS de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles AS ti
+ON (e.emp_no = ti.emp_no)
+WHERE (de.to_date = '9999-01-01')
+	AND (e.birth_date BETWEEN '1963-01-01' AND '1965-12-31')
+ORDER BY e.emp_no;
+
+-- create new list w/ older sales and development employees
+ELECT DISTINCT ON (e.emp_no) e.emp_no, 
+e.first_name, 
+e.last_name, 
+e.birth_date,
+de.from_date,
+de.to_date,
+ti.title
+INTO sales_development_mentors
+FROM employees AS e
+INNER JOIN dept_emp AS de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles AS ti
+ON (e.emp_no = ti.emp_no)
+WHERE (de.to_date = '9999-01-01')
+	AND (e.birth_date BETWEEN '1963-01-01' AND '1965-12-31')
+	AND (de.dept_no = 'd007')
+	OR (de.dept_no = 'd005')
+ORDER BY e.emp_no;
