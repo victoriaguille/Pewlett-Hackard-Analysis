@@ -1,16 +1,16 @@
 # Pewlett-Hackard Analysis
 ## Overview
 #### 
-created multiple tables to pull data on employees and departments. created tables for the managers focused on the large retirements "silver tsunami".
+Pewlett-Hackard managers recently requested that employee data be uploaded to Postgres tables in order to look through the data. During this process, it was noticed that a large portion of employees are at retiring age within the company. New tables were created based on manager requests to narrow down the data. Using different joins and queries between the initially created tables, it is clear that there will be a "silver tsunami" that will need to be addressed. New queries were formed, tables created, and results printed to csv files in order to assist managers with decisions that will need to be made such as mentorship plan for those leaving.
 ## Results
 ####
 Below are the results from the requested queries. 
   * Pewlett-Hackard employs over 300,000 individuals with 133,776 of those employees at retirement age. 
   * Amongst the potentially retiring employees, 57,668 employees are in senior positions. 
-  * A massive portion of the leadership teams will be retiring, leaving a large vacuum for potential leaders. 
-(intsert retiring_tiles table)
+  * Of the senior positions retiring, the sales department and development deapartment will be the most heavily affected. 
+![retiring_titles](https://github.com/victoriaguille/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.PNG)
   * Of the retiring employees, only 1,549 have been selected for mentorship eligibilty per the below table. 
-(insert mentorship_eligibilty file)
+![mentorship_eligibilty](https://github.com/victoriaguille/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibilty.PNG)
 
 ## Summary
 #### 
