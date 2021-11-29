@@ -8,6 +8,7 @@ Below are the results from the requested queries.
   * Pewlett-Hackard employs over 300,000 individuals with 133,776 of those employees at retirement age. 
   * Amongst the potentially retiring employees, 57,668 employees are in senior positions. 
   * Of the senior positions retiring, the sales department and development deapartment will be the most heavily affected. 
+####
 ![retiring_titles](https://github.com/victoriaguille/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.PNG)
   * Of the retiring employees, only 1,549 have been selected for mentorship eligibilty per the below table. 
 ![mentorship_eligibilty](https://github.com/victoriaguille/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibilty.PNG)
