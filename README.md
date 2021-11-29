@@ -11,6 +11,7 @@ Below are the results from the requested queries.
 ####
 ![retiring_titles](https://github.com/victoriaguille/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.PNG)
   * Of the retiring employees, only 1,549 have been selected for mentorship eligibilty per the below table. 
+####
 ![mentorship_eligibilty](https://github.com/victoriaguille/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibilty.PNG)
 
 ## Summary
